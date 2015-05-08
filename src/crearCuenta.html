@@ -1,34 +1,28 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset = "UTF-8">
 		<title>Crear Cuenta</title>
-		<script src="javascript/validarContra.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="javascript/validarContra.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
 	</head>
 	<body>
 		
+		<form action= "altaUsuario.php" method = "post" name="form" onsubmit="validar(this);">
+			<h1>Profedex</h1>
+			<h2>Crear tu cuenta</h2>
+			<input type="text" placeholder = "Nombre de Usuario" name ="nombreU" id="nombreU" required>
 
-
-		<form onsubmit="return checkForm(this);" action= "altaUsuario.php" method = "post" name="form" >
-
-			<label for ="nombreU">Ingrese un nombre de usuario:</label><br>
-			<input type="text" placeholder = "Nombre de Usuario" name ="nombreU" id="nombreU" required></input>
-			<br>
+			<input type="password" placeholder = "Contraseña" name = "pass" id="pass" requiered> 
 			
-			<label for ="correo">Ingrese un correo electronico:</label><br>
-			<input type="email" placeholder = "alguien@alumnos.uson.mx" name = "correo" id="correo" required> </input>
-			<br>
-
-			<label for ="pass">Contraseña:</label><br>
-			<input type="password" placeholder = "Contraseña" name = "pass" id="pass" requiered> </input>
-			<br>
-			
-			<label for ="passC">Contraseña:</label><br>
-			<input type="password" placeholder = "Confirmar contraseña" name = "passC" id="passC" requiered> </input>
-			<br>
-
-			<input type="submit"  name = "botonEnviar" value = "Enviar">
+			<input type="password" placeholder = "Confirmar contraseña" name = "passC" id="passC" requiered>
+			<div>
+				<input type="submit"  name = "botonEnviar" value = "Crear">
+			</div>
 		</form>
-
+		
 	</body>
 
 </html>
