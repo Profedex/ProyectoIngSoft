@@ -1,0 +1,172 @@
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+body{
+	background: #FEFEFE;
+}
+.menuI{
+	display: none;
+}
+header{
+	width: 100%;
+}
+header nav{
+	background: #023859;
+	z-index: 1000;
+	max-width: 1000px;
+	width: 95%;
+	margin: 20px auto;
+}
+header nav ul{
+	list-style: none;
+}
+header nav ul li{
+	display: inline-block;
+	position: relative;
+}
+header nav ul li:hover{
+	background: #E6344A;
+}
+header nav ul li a{
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+}
+header nav ul li a span{
+	margin-right: 10px;
+}
+header nav ul li:hover .hijos{
+	display: block;
+}
+header nav ul li .hijos{
+	display: none;
+	background: #011826;
+	position: absolute;	
+	width: 150%;
+	z-index: 1000;
+}
+
+header nav ul li .hijos li{
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .hijos li a {
+	display: block;
+}
+
+header nav ul li .hijos li span{
+	float: right;
+	position: relative;
+	top: 3px;
+	margin-right: 0px;
+	margin-left: 10px;
+}
+header nav ul li .cara{/*separa el like de la palabra*/
+	position: relative;
+	top: 3px;
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+	/* FORMATO DEL FORMULARIO*/
+	form {
+		width: 800px;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		box-shadow: inset 0 0 20px #000;
+		margin: 100px auto;
+	}
+	form input{
+		width: 280px;
+		height: 35px;
+		padding: 0px 10px;
+		margin: 10px 30px;
+		color: #000;
+		background-color: #fff;
+		text-align: center;
+	}
+	form textarea{
+		margin: 10px 30px;
+	}
+	.comentarios{
+		background-color: #000;
+		width:700px;
+		height: auto;
+		margin: auto;
+		margin-top: 40px;
+	}
+
+@media screen and (max-width: 800px){/*LO QUE VA DENTRO DE AQUI ES AFECTADO AL MOMENTO DE REDUCIR LA PANTALLA*/
+	body{
+		padding-top: 80px;
+	}
+	.menuI{
+		display: block;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		background: #E6344A;
+	}
+	.menuI .bt-menu{
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.menuI span{
+		float: right;
+		font-size: 40px;
+	}
+	header nav{
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right: 100%;
+		margin: 0;
+		overflow: scroll;
+	}
+	header nav ul li{
+		display: block;
+		border-bottom: 1px solid rgba(255,255,255,.5);
+	}
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li:hover .hijos{
+		display: none;
+	}
+
+	header nav ul li .hijos{
+		width: 100%;
+		position: relative;/*desplazar hacia abajo */
+	}
+	header nav ul li .hijos li a {
+		margin-left: 20px;
+	}
+	header nav ul li .cara{
+		float: right;
+	}
+
+	/*FORMATO DE LOS COMENTARIOS*/
+
+
+}
+
+
+
+
+
+
+
